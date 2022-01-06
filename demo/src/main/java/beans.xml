@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans 
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+   
+   <context:component-scan base-package="com.example.demo.classes"></context:component-scan><!-- Load configuration from annotations @Component to create beans within package -->
+ 	 <!-- <bean id="vehicle" class="com.example.demo.classes.Car"></bean> -->
+ 	 
+ 	 <!--
+ 	 <bean id="tyre" class="com.example.demo.classes.Tyre">
+ 	    <property name="brand" value="MRF"></property> without constructor Set the property after the object is created 
+ 	 	<constructor-arg value="MRF"></constructor-arg>  Used in the constructor of the object 
+ 	 </bean>
+ 	 -->
+ 	 
+</beans>
